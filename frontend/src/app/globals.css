@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffd230;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex; /* Enable horizontal layout */
+  align-items: center; /* Vertically align items */
+  padding: 1rem;
+}
+
+/* Images in Navbar */
+.navbar-image {
+  margin-right: 0.1rem; /* Optional spacing between images */
+}
