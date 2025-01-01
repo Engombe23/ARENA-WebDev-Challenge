@@ -35,3 +35,30 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-image {
   margin-right: 0.1rem; /* Optional spacing between images */
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Default styles (for larger screens) */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: flex; /* Enable horizontal layout */
+    align-items: center; /* Vertically align items */
+    padding: 1rem;
+  }
+}

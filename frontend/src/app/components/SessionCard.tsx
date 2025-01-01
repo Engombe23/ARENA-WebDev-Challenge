@@ -19,6 +19,7 @@ const SessionCard = ({session}:any) => {
       })
 
       const authData = await authResponse.json();
+      console.log(authData);
 
       if (!authData.authenticated) {
         window.location.href = '/login';
