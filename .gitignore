@@ -1,0 +1,13 @@
+# Node.js (frontend)
+node_modules/
+.next/
+.env
+.env.local
+.env.*.local
+
+# Python/Django (backend)
+__pycache__/
+*.py[cod]
+db.sqlite3
+.env
+venv/

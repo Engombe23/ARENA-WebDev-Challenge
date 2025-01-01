@@ -35,7 +35,7 @@ export async function POST(req: Request) {
                 },
             ],
             mode: 'payment',
-            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+            success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
             cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
         });
 
