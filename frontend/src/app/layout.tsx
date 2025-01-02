@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -25,9 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${oswald.className} ${openSans.className}`}
-      >
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={`${oswald.className} ${openSans.className}`}>
+        <Navbar/>
         {children}
       </body>
     </html>

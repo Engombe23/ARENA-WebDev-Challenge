@@ -14,6 +14,16 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -39,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
 }
 
 /* Default styles (for larger screens) */
